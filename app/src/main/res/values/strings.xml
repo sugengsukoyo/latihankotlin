@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">latihankotlin</string>
+    <string name="title_app">BKD</string>
+    <string name="username">username</string>
+    <string name="pasword">pasword</string>
+    <string name="belum_punya_akun">Belum Punya Akun</string>
+    <string name="title_daftar">Daftar</string>
+</resources>
