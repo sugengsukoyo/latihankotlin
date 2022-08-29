@@ -18,14 +18,29 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.tvLoginTitle.setOnClickListener {
 
-            Toast.makeText(this, "click", Toast.LENGTH_SHORT).show()
 
-            val intentDial = Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "123456789"))
-            startActivity(intentDial)
+        with(binding) {
+            tvLoginTitle.setOnClickListener {
+
+                Toast.makeText(this@LoginActivity, "click", Toast.LENGTH_SHORT).show()
+
+                val intentDial = Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "123456789"))
+                startActivity(intentDial)
+
+            }
+
+           btnLogin.setOnClickListener {
+
+                var username = username.editText?.text.toString()
+                var pasword =  pasword.editText?.text.toString()
+                Toast.makeText(this@LoginActivity, "$username $pasword" , Toast.LENGTH_SHORT).show()
+
+
+            }
 
         }
+
 
 
 
